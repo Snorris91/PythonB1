@@ -3,3 +3,4 @@ from .dog import Dog
 from .goat import Goat
 from .rabbit import Rabbit
 from .elephant import Elephant
+from .pettingzoo import PettingZoo
