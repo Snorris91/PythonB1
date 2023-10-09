@@ -22,5 +22,5 @@ class Turtle:
         return self.__chip_num
 
     @chip_num.setter
-    def chip_num(self, number):
+    def chip_num(self, num):
         pass

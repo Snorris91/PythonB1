@@ -1,5 +1,6 @@
 # import the python datetime module to help us create a timestamp
 from datetime import date
+from animal import Animal
 from swimming import Catfish, Shark, Whale, Seal, Dolphin, WaterTank
 from walking import Llama, Dog, Goat, Rabbit, Elephant, PettingZoo
 from slithering import Toad, Frog, Gator, Turtle, Snake, SlitherPit
@@ -44,10 +45,10 @@ wetlands.add_animal(val)
 wetlands.add_animal(derek)
 wetlands.add_animal(dav)
 
-# print(fluffy_town)
-# print(f"{leo.name} is a {leo.species}! They were added on {leo.date_added}.")
-# leo.feed()
-# print(leo)
+print(fluffy_town)
+print(f"{leo.name} is a {leo.species}! They were added on {leo.date_added}.")
+leo.feed()
+print(leo)
 
 print(fluffy_town)
 for animal in fluffy_town.animals:
@@ -61,4 +62,11 @@ print(wetlands)
 for animal in wetlands.animals:
     print(f"* {animal.name} the {animal.species}")
 
+leo.chip_num = 54654
 print(leo.chip_num)
+print(fluffy_town.last_critter_added)
+
+
+attributes=vars(miss_fuzz)
+for key in attributes.keys():
+    print(f"{key}: {attributes[key]}")
