@@ -10,7 +10,6 @@ class PettingZoo(Attraction):
             if animal.shift:
                 self.animals.append(animal)
                 print(f"{animal.name} now lives in {self.attraction_name}")
-        except AttributeError as ex:
+        except AttributeError:
             print(
-                f"{animal.name} does not like to be petted, so please do not put it in the {self.attraction_name} attraction!"
-            )
+                f"{animal.name} does not like to be petted, so please do not put it in the {self.attraction_name} attraction!")
